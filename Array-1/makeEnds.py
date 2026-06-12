@@ -8,3 +8,9 @@ makeEnds([1, 2, 3]) → 1,3
 makeEnds([1, 2, 3, 4]) → 1,4
 makeEnds([7, 4, 6, 2]) → 7,2
 '''
+def makeEnds(nums):
+    return nums[0], nums[-1]
+
+print(makeEnds([1,2,3]))
+print(makeEnds([1,2,3,4]))
+print(makeEnds([7,4,6,2]))
