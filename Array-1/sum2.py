@@ -1,15 +1,25 @@
 '''
-Given an array of ints length 3, return the sum of all the elements.
+Given an array of ints, return the sum of the first 2 elements in the array.
+If the array length is less than 2, just sum up the elements that exist,
+returning 0 if the array is length 0.
 
 Examples
 
-sum3([1, 2, 3]) → 6
-sum3([5, 11, 2]) → 18
-sum3([7, 0, 0]) → 7
+sum2([1, 2, 3]) → 3
+sum2([1, 1]) → 2
+sum2([1, 1, 1, 1]) → 2
 '''
-def sum3(nums):
-    return sum(nums)
-     
-print(sum3([1,2,3]))
-print(sum3([5,11,2]))
-print(sum3([7,0,0]))
+
+def sum2(nums):
+    if len(nums) == 0:
+        return 0
+    if len(nums) == 1:
+        return nums[0]
+    return nums[0] + nums[1]
+   
+  
+print(sum2([1,2,3]))
+print(sum2([1,1]))
+print(sum2([1,1,1,1]))
+
+   
